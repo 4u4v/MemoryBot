@@ -182,8 +182,8 @@ if st.session_state.stored_session:
         del st.session_state.stored_session
         
 # Load the images
-image1 = Image.open("wechatPay_qrcode.png")
-image2 = Image.open("alipay_qrcode.jpg")
+image1 = Image.open("alipay_qrcode.jpg")
+image2 = Image.open("wechatPay_qrcode.png")
 
 # Display the image with text on top
 st.write("I have to pay OpenAI API for each of your usage. Please consider donating ￥1 to keep this service alive! Thank you!")
@@ -195,9 +195,9 @@ col1, col2 = st.columns(2)
 
 # Display the first image in the first column
 with col1:
-    st.image(image1, caption="WeChat Pay", width=200)
+    st.image(image1, caption="AliPay", width=200)
 
 # Display the second image in the second column
 with col2:
-    st.image(image2, caption="AliPay", width=200)
+    st.image(image2, caption="WeChat Pay", width=200)
 
